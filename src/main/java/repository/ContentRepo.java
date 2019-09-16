@@ -11,6 +11,7 @@ import java.util.List;
 public class ContentRepo {
     private IntechServerApi api = ApiInstance.INSTANCE;
 
+    //Not used, only for testing
     public BaseResponse<List<Content>> getContents() throws IOException {
         return api.getContents().execute().body();
     }

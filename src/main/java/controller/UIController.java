@@ -5,7 +5,6 @@ import service.ClientService;
 import service.ContentService;
 import service.LoginService;
 import settings.Settings;
-import sun.swing.SwingUtilities2;
 import ui.UI;
 
 public class UIController {

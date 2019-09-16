@@ -5,7 +5,6 @@ import api.IntechServerApi;
 import model.BaseResponse;
 import model.Client;
 import model.Content;
-import retrofit2.Response;
 
 import java.io.IOException;
 import java.util.List;
@@ -13,8 +12,8 @@ import java.util.List;
 public class ClientRepo {
     private IntechServerApi api = ApiInstance.INSTANCE;
 
+    //Not used, only for testing
     public BaseResponse<List<Client>> getClients() throws IOException {
-
         return api.getClients().execute().body();
     }
 

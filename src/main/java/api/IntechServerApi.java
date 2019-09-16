@@ -7,6 +7,8 @@ import retrofit2.http.*;
 import java.util.List;
 
 public interface IntechServerApi {
+
+    //Not used, only for testing
     @GET("/clients")
     Call<BaseResponse<List<Client>>> getClients();
 
@@ -16,6 +18,7 @@ public interface IntechServerApi {
     @POST("/clients")
     Call<BaseResponse<Client>> createClient(@Body String name);
 
+    //Not used, only for testing
     @GET("/contents")
     Call<BaseResponse<List<Content>>> getContents();
 

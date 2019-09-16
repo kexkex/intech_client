@@ -5,7 +5,6 @@ import model.BaseResponse;
 import model.Content;
 import repository.ClientRepo;
 import settings.Settings;
-
 import java.io.IOException;
 
 public class ClientService {

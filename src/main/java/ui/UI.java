@@ -2,25 +2,11 @@ package ui;
 
 import controller.UIController;
 import model.Content;
-
 import java.util.Scanner;
 
 public class UI {
 
     private UIController uiController = new UIController(this);
-
-    public String readInput(){
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextLine();
-    }
-
-    public void readAction(){
-        uiController.readAction(readInput());
-    }
-
-    public void showCurrentScreen(){
-        uiController.showCurrentScreen();
-    }
 
     public void showSectionChooserScreen() {
         println("****************");
@@ -46,12 +32,6 @@ public class UI {
     }
 
 
-
-    private void println(String s){
-        System.out.println(s);
-    }
-
-
     public void showClientScreen(Content content) {
         println("****************");
         println("Client Contents Section:");
@@ -64,5 +44,18 @@ public class UI {
         println("Contents Section:");
         println("1 - Show Next Content, 2 - Add Content To Library, * - Back To Choose Section");
         println(content.getName());
+    }
+
+    public String readInput(){
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
+    }
+
+    public void readAction(){
+        uiController.readAction(readInput());
+    }
+
+    private void println(String s){
+        System.out.println(s);
     }
 }
